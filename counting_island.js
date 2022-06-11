@@ -3,24 +3,6 @@
 An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
 */
 
-
-
-const grid1 = [
-    ["1","1","1","1","0"],
-    ["1","1","0","1","0"],
-    ["1","1","0","0","0"],
-    ["0","0","0","0","0"]
-  ] // 1
-
-
-const grid2 = [
-    ["1","1","0","0","0"],
-    ["1","1","0","0","0"],
-    ["0","0","1","0","0"],
-    ["0","0","0","1","1"]
-  ]
-  // 3
-
 /* Constraints:
 
 m == grid.length
@@ -28,6 +10,22 @@ n == grid[i].length
 1 <= m, n <= 300
 grid[i][j] is '0' or '1'.
 */
+
+
+const grid1 = [
+    ["1","1","1","1","0"],
+    ["1","1","0","1","0"],
+    ["1","1","0","0","0"],
+    ["0","0","0","0","0"]
+]; // 1
+
+
+const grid2 = [
+    ["1","1","0","0","0"],
+    ["1","1","0","0","0"],
+    ["0","0","1","0","0"],
+    ["0","0","0","1","1"]
+]; // 3
 
 
 const getNeighbors  = (row, col, grid) => {
